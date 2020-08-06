@@ -3,12 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "s3": "aws s3 cp dist s3://tpx-test-tw --recursive --acl=public-read --profile=default"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "core-js": "^3.6.5",
+    "element-ui": "^2.13.2",
+    "moment": "^2.27.0",
+    "pug": "^3.0.0",
+    "pug-plain-loader": "^1.0.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
     "vuex": "^3.4.0"
